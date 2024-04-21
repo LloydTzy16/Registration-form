@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('Lloyd.jpg'); /* Replace 'background_image.jpg' with the path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Light gray container background with transparency */
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000; /* Black label color */
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000; /* Black border */
+  border-radius: 5px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000; /* Black button background */
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #333; /* Darker black on hover */
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2 style="color: #000;">Registration Form</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" required>
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Register</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
